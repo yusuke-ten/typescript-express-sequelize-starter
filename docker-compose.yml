@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    container_name: rest_api_mysql
+    build: ./database
+
+    ports:
+      - $MYSQL_PORT:3306
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./database/init:/docker-entrypoint-initdb.d

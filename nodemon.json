@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["__tests__/**/*.ts"],
+  "exec": "npm run ts-node ./src/index.ts"
+}
